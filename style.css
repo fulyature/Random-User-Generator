@@ -12,7 +12,7 @@ h1 {
   color: rgb(0, 162, 255);
 }
 .container {
-  width: min(90%, 36em);
+  width: min(90%, 30em);
   height: auto;
   font-weight: 600;
   padding: 4em 0;
@@ -25,8 +25,12 @@ h1 {
   left: 50%;
   top: 30%;
   text-align: left;
-  line-height: 35px;
+  line-height: 20px;
   text-indent: 30px;
+}
+.image {
+  width: 250px;
+  height: auto;
 }
 .button {
   width: 100%;

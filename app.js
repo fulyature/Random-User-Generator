@@ -21,5 +21,34 @@ const getData = async () => {
 };
 
 const domaYaz = (x) => {
-  card.innerHTML = ``;
+  const {
+    picture: { medium },
+    name: { first },
+    name: { last },
+    location: { country },
+    phone,
+    email,
+  } = x.results[0];
+
+  card.innerHTML = `<img class="image" src="${medium}"" alt="" />
+  <p>
+    <i class="fa-solid fa-user"> Name:</i>
+    <span class="name">${first}</span>
+  </p>
+  <p>
+    <i class="fa-solid fa-user"> Last-Name:</i>
+    <span class="last-name">${last}</span>
+  </p>
+  <p>
+    <i class="fa-solid fa-magnifying-glass-location"> Location:</i>
+    <span class="location">${country}</span>
+  </p>
+  <p>
+    <i class="fa-solid fa-phone-flip"> Phone:</i>
+    <span class="phone"${phone}</span>
+  </p>
+  <p>
+    <i class="fa-solid fa-envelope"> Email:</i>
+    <span class="email">${email}</span>
+  </p>`;
 };
